@@ -1,0 +1,159 @@
+/* General styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form styles */
+
+form {
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    background-color: black;
+    color: rgb(7, 7, 253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form div:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+}
+
+.show-div,
+.hide-div{
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 10px;
+    /* width: 10%; */
+    
+    cursor: pointer;
+    
+}
+
+.eye{
+    font-size: 14px;
+}
+
+.password-length{
+    font-size: 11px;
+    text-align: center;
+    margin-top: -10px;
+    color: rgb(0, 89, 255);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(1, 253, 1);
+}
+
+
+#loading-div {
+    position: absolute;
+    left: 70%;
+    top: 72.5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 8px solid black;
+    margin: -76px 0 0 -76px;
+    border-top: 8px solid white;
+    animation: spin 2s linear infinite;
+}
+
+.registered{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.registered span{
+    cursor: pointer;
+    color: #007bff
+}
+
+.registered span:hover{
+    color: #2176d1;
+}
+
+#success-msg,
+#failed-msg,
+#login-failed-msg{
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+
+#failed-msg,
+#login-failed-msg{
+    color: red;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

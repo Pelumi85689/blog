@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and login</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/85310ecdcf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <div>Sign up</div>
+            <div class="input-container">
+                <input type="text" name="" id="f-name" placeholder="Fullname" required>
+            </div>
+            <div class="input-container">
+                <input type="email" name="" id="user-email" placeholder="Email" required>
+            </div>
+            <div class="input-container">
+                <input type="password" name="" id="user-password" placeholder="Password" required>
+
+                <div class="show-div" onclick="showPass()">
+                    <!-- <i class="fa-solid fa-eye eye" id="pass-show"></i> -->
+                </div>
+                <div class="hide-div" onclick="hidePass()">
+                    <i class="fa-solid fa-eye-slash eye" id="pass-hide"></i>
+                </div>
+
+            </div>
+            <div class="password-length">(Password must be at least 8 characters long)</div>
+            <div class="input-container">
+                <input type="password" name="" id="confirm-password" placeholder="Confirm password" required>
+
+            </div>
+            <div>
+                <a href="./signin.html"><button type="submit" onclick="signUp(event)">Sign Up</button></a>
+            </div>
+            <div id="signup-msg"></div>
+            <div class="registered">
+                <p>Already have an account? <a href="./signin.html"><span onclick="loginPage()">Login Here</span></a></p>
+            </div>
+            <div id="loading-div">
+                <div class="loader"></i></div>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
